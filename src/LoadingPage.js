@@ -39,9 +39,15 @@ function LoadingPage() {
        customNameData4: val.email,
        customNameData5: val.phone,
        customNameData6: val.website,
-       customNameData7:val.company.name,
-       customNameData8:val.company.catchPhrase,
-       customNameData9:val.company.bs
+       customNameData7: val.company.name,
+       customNameData8: val.company.catchPhrase,
+       customNameData9: val.company.bs,
+       customNameData10: val.address.street,
+       customNameData11: val.address.suite,
+       customNameData12: val.address.city,
+       customNameData13: val.address.zipcode,
+       customNameData14: val.address.geo.lat,
+       customNameData15:val.address.geo.lng
      });
      
   }

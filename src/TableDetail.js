@@ -6,6 +6,8 @@ import ProfileDetails from "./ProfileDetails";
 import Gallery from "./Gallery";
 import ToDo from "./ToDo";
 import Posts from "./Posts";
+import Map from  "./Map"
+
 function TableDetail(props) {
   //console.log(props)
 
@@ -62,7 +64,26 @@ function TableDetail(props) {
 
         <div class="col-8">
           <p>Address</p>
-          <h6>Street</h6>
+          <h6>
+            street:-<strong>{props.location.customNameData10}</strong>
+          </h6>
+          <h6>
+            suite:-<strong>{props.location.customNameData11}</strong>
+          </h6>
+          <h6>
+            city:-<strong>{props.location.customNameData12}</strong>
+          </h6>
+          <h6>
+            zipcode:-<strong>{props.location.customNameData13}</strong>
+          </h6>
+          <h6>
+            lat:-<strong>{props.location.customNameData14}</strong>
+          </h6>
+          <h6>
+            lng:-<strong>{props.location.customNameData15}</strong>
+          </h6>
+
+          <Map/>
         </div>
       </div>
     </div>
